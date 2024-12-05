@@ -7,7 +7,7 @@ public partial class ProductType
 {
     public short Id { get; set; }
 
-    public string ProductType1 { get; set; } = null!;
+    public string TypeProduct { get; set; } = null!;
 
     public virtual ICollection<Product> Products { get; set; } = new List<Product>();
 }

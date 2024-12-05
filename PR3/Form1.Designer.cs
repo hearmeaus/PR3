@@ -28,12 +28,51 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            shapka = new Label();
+            Output = new Label();
+            SuspendLayout();
+            // 
+            // shapka
+            // 
+            shapka.BackColor = Color.White;
+            shapka.Dock = DockStyle.Top;
+            shapka.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            shapka.ImageAlign = ContentAlignment.TopCenter;
+            shapka.Location = new Point(0, 0);
+            shapka.Name = "shapka";
+            shapka.Size = new Size(800, 72);
+            shapka.TabIndex = 0;
+            shapka.TextAlign = ContentAlignment.MiddleCenter;
+            shapka.Click += shapka_Click;
+            // 
+            // Output
+            // 
+            Output.BackColor = Color.White;
+            Output.Dock = DockStyle.Fill;
+            Output.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 204);
+            Output.Location = new Point(0, 72);
+            Output.Name = "Output";
+            Output.Size = new Size(800, 378);
+            Output.TabIndex = 1;
+            Output.TextAlign = ContentAlignment.MiddleCenter;
+            Output.Click += Output_Click;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(Output);
+            Controls.Add(shapka);
+            Name = "Form1";
+            Text = "Form1";
+            Load += Form1_Load;
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Label shapka;
+        private Label Output;
     }
 }

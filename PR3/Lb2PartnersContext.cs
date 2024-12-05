@@ -82,7 +82,7 @@ public partial class Lb2PartnersContext : DbContext
             entity.HasKey(e => e.Id).HasName("ProductTypes_pkey");
 
             entity.Property(e => e.Id).UseIdentityAlwaysColumn();
-            entity.Property(e => e.ProductType1).HasColumnName("ProductType");
+            entity.Property(e => e.TypeProduct).HasColumnName("ProductType");
         });
 
         modelBuilder.Entity<TypesOfPartner>(entity =>
