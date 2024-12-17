@@ -7,7 +7,6 @@ namespace PR3
         {
             ApplicationConfiguration.Initialize();
             Application.Run(new Form1());
-            Application.Run(new Form2());
         }
     }
 }
